@@ -1,0 +1,104 @@
+:root {
+    --main-color: #333333;
+    --text-color: #ffffff;
+    --bg-color: #000000;
+    --up-color: rgb(27, 210, 27);
+    --down-color: orangered;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 2em;
+}
+
+.title-main {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    padding-top: 7px;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#income {
+    color: var(--up-color);
+}
+
+#income:hover {
+    color: rgb(12, 85, 12);
+}
+
+#expense {
+    color: var(--down-color);
+}
+
+#expense:hover {
+    color: rgb(152, 41, 0);
+}
+
+.transactions {
+    width: 300px;
+    height: 275px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.transactions h3 {
+    font-size: 25px;
+    position: relative;
+    padding: 15px;
+}
+
+#transactionForm {
+    padding-left: 1em;
+    padding-right: 1em;
+    gap: 2em;
+}
+
+button {
+    width: 6em;
+    height: 2em;
+}
+
+label {
+    display: block;
+    justify-content: space-between;
+}
+
+button {
+    margin-top: 1.5em;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    border-radius: 5px;
+    transition: .3s;
+}
+
+button:hover {
+    filter: drop-shadow(0px 0px 2px lime);
+    color: lime;
+}
+
+#response {
+    font-size: 12px;
+}
